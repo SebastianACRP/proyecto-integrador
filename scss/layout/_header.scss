@@ -3,8 +3,21 @@
 
 .header {
     grid-area: header;
+    background-color: rgb(74, 20, 140);
 
     h1 {
-        color: red;
+        color: white;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        width: 40px;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
     }
 }

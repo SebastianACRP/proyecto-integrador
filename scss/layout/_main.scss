@@ -3,4 +3,33 @@
 
 .main {
     grid-area: main;
+
+    .section {
+        width: 100%;
+
+        h3 {
+            padding-left: 1vw;
+            padding-top: 1vw;
+        }
+
+        &__form {
+            padding-left: 1vw;
+            padding-bottom: 1vw;
+        }
+
+        &__gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding-left: 1vw;
+        }
+
+        &--slider {
+            overflow: hidden;
+        }
+
+        &--products {
+            gap: 1vw;
+            background-color: rgb(225, 190, 231);
+        }
+    }
 }

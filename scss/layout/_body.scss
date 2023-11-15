@@ -9,7 +9,8 @@ body {
     "header"
     "main"
     "footer";
-
+    gap: 1vw;
+    background-color: rgb(243, 229, 245);
     padding: $_padding;
     width: calc(100% - (2*$_padding));
 }

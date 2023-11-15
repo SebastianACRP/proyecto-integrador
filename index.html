@@ -9,61 +9,157 @@
 
     <title>Mi tienda</title>
 
-    <link rel="shortcut icon" href="./images/carrito-de-compras.png">
+    <!-- <link rel="shortcut icon" href="./images/carrito-de-compras.png"> -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header class="header">
-        <!-- <img src="" alt="Logo"> -->
-        <h1>Mi tienda</h1>
-
+        <div class="header__menu">
+            <h1 class="header__tittle">SebaSports</h1>
+            <img class="header__logo" src="./images/logo_2.png" alt="Logo">
+        </div>
         <nav class="navbar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
+            <ul class="navbar__menu">
+                <li><a class="navbar__item navbar__item--active" href="./index.html">Home</a></li>
+                <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section>
-            <div>
-                <div>
-                    <h4>Primer Slide</h4>
-                    <img src="" alt="">
+        <section class="section section--slider">
+            <div class="slider">
+                <div class="slider__one">
+                    <h4 class="slider__tittle"></h4>
+                    <img class="slider__image" src="./images/img01.jpg" alt="x">
                 </div>
-                <div>
-                    <h4>Primer Slide</h4>
-                    <img src="" alt="">
+                <div class="slider__two">
+                    <h4 class="slider__tittle"></h4>
+                    <img class="slider__image" src="./images/img02.jpg" alt="x">
                 </div>
-                <div>
-                    <h4>Primer Slide</h4>
-                    <img src="" alt="">
+                <div class="slider__three">
+                    <h4 class="slider__tittle"></h4>
+                    <img class="slider__image" src="./images/img03.jpg" alt="x">
                 </div>
             </div>
         </section>
-        <section>
-            <h3>Galeria de Productos</h3>
-            <figure>
-                <img src="" alt="descripcion de la foto">
-                <h4>Nombre del primer producto</h4>
-                <p>Lorem ipsum dolor sit amet</p>
+        <section class="section section--products">
+                <h3>Galeria de Productos</h3>
+                <div class="section__form">Formulario de busqueda y link para crear un nuevo producto</div>
+            <div class="section__gallery">
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
                 <div>
-                    <button>Agregar</button>
-                    <span>0</span>
-                    <button>Quitar</button>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
                 </div>
             </figure>
-            <figure>
-                <img src="" alt="descripcion de la foto">
-                <h4>Nombre del primer producto</h4>
-                <p>Lorem ipsum dolor sit amet</p>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
                 <div>
-                    <button>Agregar</button>
-                    <span>0</span>
-                    <button>Quitar</button>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
                 </div>
             </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
+                <h4 class="card__tittle">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet</p>
+                <div>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm button--confirm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--danger button--remove">Quitar</button>
+                </div>
+            </figure>
+            </div>
         </section>
 
 
