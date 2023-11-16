@@ -3,9 +3,36 @@
 
 .footer {
     grid-area: footer;
-    background-color: rgb(74, 20, 140);
+    background-color: rgb(117, 117, 117);
     color: white;
-    display: flex;
-    justify-content: center;
+    font-size: small;
     padding: 1vw;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1vw;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tittle {
+        margin-bottom: 3vh;
+        margin-right: 0;
+    }
+
+    &__row {
+        margin-bottom: 1vh;
+    }
 }

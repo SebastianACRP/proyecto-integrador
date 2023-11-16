@@ -4,6 +4,10 @@
 .navbar {
     background-color: rgb(171, 71, 188);
 
+    a:hover {
+        font-weight: bold;
+    }
+
     &__item {
          color: white;
     }
@@ -18,7 +22,7 @@
 
     &__item--active {
         text-decoration: underline;
-        color: blue;
+        color: rgb(225, 190, 231);
         font-weight: bold;
     }
 }

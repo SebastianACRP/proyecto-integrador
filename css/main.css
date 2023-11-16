@@ -71,7 +71,7 @@ ul {
   background-color: rgb(225, 190, 231);
 }
 .card__image {
-  width: 25%;
+  width: 80%;
 }
 .card__tittle {
   color: black;
@@ -149,11 +149,33 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: rgb(74, 20, 140);
+  background-color: rgb(117, 117, 117);
   color: white;
+  font-size: small;
+  padding: 1vw;
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1vw;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.footer__item {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.footer__copyright {
   display: flex;
   justify-content: center;
-  padding: 1vw;
+}
+.footer__tittle {
+  margin-bottom: 3vh;
+  margin-right: 0;
+}
+.footer__row {
+  margin-bottom: 1vh;
 }
 
 .header {
@@ -177,21 +199,42 @@ body {
 .main {
   grid-area: main;
 }
+.main__about {
+  text-align: center;
+  font-size: 28px;
+  padding-bottom: 0;
+}
 .main .section {
   width: 100%;
 }
-.main .section h3 {
+.main .section__editorial {
+  padding: 10px 10px;
+}
+.main .section__recommended {
   padding-left: 1vw;
   padding-top: 1vw;
+  font-size: 1.5rem;
+}
+.main .section__reference {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .main .section__form {
   padding-left: 1vw;
   padding-bottom: 1vw;
 }
+.main .section__paragraph {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .main .section__gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-left: 1vw;
+  padding-right: 1vw;
+  gap: 1vw;
 }
 .main .section--slider {
   overflow: hidden;
@@ -203,6 +246,9 @@ body {
 
 .navbar {
   background-color: rgb(171, 71, 188);
+}
+.navbar a:hover {
+  font-weight: bold;
 }
 .navbar__item {
   color: white;
@@ -216,6 +262,6 @@ body {
 }
 .navbar__item--active {
   text-decoration: underline;
-  color: blue;
+  color: rgb(225, 190, 231);
   font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
