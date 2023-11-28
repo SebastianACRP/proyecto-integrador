@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+@use "../base/typography";
 
 .header {
     grid-area: header;
@@ -7,6 +8,7 @@
 
     h1 {
         color: var.$backgroundColorLight;
+        font-family: 'Audiowide', sans-serif;
     }
 
     .cart {

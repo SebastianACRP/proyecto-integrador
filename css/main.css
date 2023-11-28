@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -247,6 +248,7 @@ body {
 }
 .header h1 {
   color: rgb(255, 255, 255);
+  font-family: "Audiowide", sans-serif;
 }
 .header .cart {
   display: flex;
@@ -409,7 +411,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1vw 1vw;
-  background-image: url(.../images/fondoform);
 }
 .main-addproduct .section__addproduct__form {
   display: flex;
