@@ -4,16 +4,14 @@
 .footer {
     grid-area: footer;
     background-color: rgb(117, 117, 117);
-    color: white;
+    color: var.$backgroundColorLight;
     font-size: small;
     padding: 1vw;
 
     &__container {
         display: flex;
         flex-direction: row;
-        margin-bottom: 1vw;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 0 10% 1vw 10%;
     }
 
     &__item {
@@ -28,11 +26,16 @@
     }
 
     &__tittle {
-        margin-bottom: 3vh;
-        margin-right: 0;
+        margin: 0 0 3vh 0;
     }
 
     &__row {
         margin-bottom: 1vh;
+
+        a:-webkit-any-link {
+                color: var.$backgroundColorLight;
+                cursor: pointer;
+                text-decoration: none;
+            }
     }
 }

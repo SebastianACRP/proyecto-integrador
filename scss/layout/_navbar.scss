@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as mix;
 
 .navbar {
-    background-color: rgb(171, 71, 188);
+    background-color: var.$backgroundColorNavbar;
 
     a:hover {
         font-weight: bold;

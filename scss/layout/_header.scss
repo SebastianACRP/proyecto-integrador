@@ -3,10 +3,21 @@
 
 .header {
     grid-area: header;
-    background-color: rgb(74, 20, 140);
+    background: linear-gradient(var.$backgroundColorHeader, var.$backgroundColorLight);
 
     h1 {
-        color: white;
+        color: var.$backgroundColorLight;
+    }
+
+    .cart {
+        display: flex;
+        justify-content: end;
+
+        img {
+                width: 36px;
+                height: 36px;
+                margin-right: 10px;
+            }
     }
 
     &__menu {

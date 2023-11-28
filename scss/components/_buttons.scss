@@ -4,8 +4,8 @@
 .button {
     border: 0.0625rem solid black;
     border-radius: 0.35rem;
-    background-image: linear-gradient(125deg, gray, white 65%);
-    box-shadow: 1px 1px 4px -3px gray;
+    background-image: linear-gradient(125deg, var.$greyColor, var.$backgroundColorLight 65%);
+    box-shadow: 1px 1px 4px -3px var.$greyColor;
     cursor: pointer;
 
     &--sm {
@@ -29,6 +29,8 @@
     &--add {
         @include mix.button-default(var.$backgroundColorLight, var.$backgroundColorLight, var.$backgroundColor);
 
+        width: max-content;
+
         &:hover,
         &:active {
             @include mix.button-active(var.$backgroundColorDark, var.$backgroundColor, var.$backgroundColorLight);
@@ -38,18 +40,31 @@
     &--remove {
         @include mix.button-default(var.$backgroundColorLight, var.$backgroundColorLight, red);
 
+        width: max-content;
+
         &:hover,
         &:active {
-            @include mix.button-active(darkred, red, var.$backgroundColorLight);
+            @include mix.button-active(var.$backgroundColorDarkRed, red, var.$backgroundColorLight);
         }
     }
 
     &--disabled {
-        @include mix.button-default(var.$backgroundColorLight, var.$backgroundColorLight, gray);
+        @include mix.button-default(var.$backgroundColorLight, var.$backgroundColorLight, var.$greyColor);
+
+        width: max-content;
 
         &:hover,
         &:active {
-            @include mix.button-active(var.$backgroundColorLight, gray, var.$backgroundColorLight);
+            @include mix.button-active(var.$backgroundColorLight, var.$greyColor, black);
         }
     }
+}
+
+.section__search--btn {
+    border: 0.0625rem solid black;
+        border-radius: 0.35rem;
+        background: linear-gradient(var.$backgroundColorHeader, var.$backgroundColorLight);
+        box-shadow: 1px 1px 4px -3px var.$greyColor;
+        cursor: pointer;
+        padding: 5px;
 }

@@ -9,15 +9,18 @@
 
     <title>Mi tienda</title>
 
-    <!-- <link rel="shortcut icon" href="./images/carrito-de-compras.png"> -->
+    <link rel="shortcut icon" href="./images/logo/logo_2.png">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="home">
     <header class="header">
         <div class="header__menu">
             <h1 class="header__tittle">SebaSports</h1>
-            <img class="header__logo" src="./images/logo_2.png" alt="Logo">
+            <img class="header__logo" src="./images/logo/logo_2.png" alt="Logo">
+        </div>
+        <div class="cart">
+            <img class="cart__icon" src="./images/logo/carrito_2.png" alt="Carrito">
         </div>
         <nav class="navbar">
             <ul class="navbar__menu">
@@ -29,138 +32,225 @@
     </header>
 
     <main class="main">
-        <section class="section section--slider">
+        <div class="section section--slider">
             <div class="slider">
                 <div class="slider__one">
-                    <h4 class="slider__tittle"></h4>
-                    <img class="slider__image" src="./images/img01.jpg" alt="x">
+                    <img class="slider__image" src="./images/slider1.jpg" alt="x">
                 </div>
                 <div class="slider__two">
-                    <h4 class="slider__tittle"></h4>
-                    <img class="slider__image" src="./images/img02.jpg" alt="x">
+                    <img class="slider__image" src="./images/slider2.jpg" alt="x">
                 </div>
                 <div class="slider__three">
-                    <h4 class="slider__tittle"></h4>
-                    <img class="slider__image" src="./images/img03.jpg" alt="x">
+                    <img class="slider__image" src="./images/slider3.jpg" alt="x">
                 </div>
             </div>
-        </section>
+        </div>
         <section class="section section--products">
-                <h3 class="section__recommended">Recomendados para vos</h3>
-                <div class="section__form">
+            <h3 class="section__recommended">Recomendados para vos</h3>
+            <div class="section__formhome">
+                <div class="section__formhome--input">
                     <input type="text" placeholder="Buscar...">
                 </div>
+                <div class="section__search">
+                    <button class="section__search--btn">Buscar</button>
+                </div>
+            </div>
+            <div class="section__addprod">
+                <a href="./addproduct.html" id="search-icon">Agregar Producto</a>
+            </div>
             <div class="section__gallery">
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img04.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/img05.jpg" alt="descripcion de la foto">
-                <h4 class="card__tittle">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet</p>
-                <div>
-                    <span class="card__price">5500</span>
-                    <button class="button button--sm button--confirm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--danger button--remove">Quitar</button>
-                </div>
-            </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_01.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Ojotas Havaianas</h4>
+                        <ul class="card__text">
+                            <li>Color: Negro.</li>
+                            <li>Talles: 38 a 42.</li>
+                            <li>Origen: Brasil.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">3430,00</span>
+                        <div class="card__addcart">
+                            <div class="card__addcart">
+                                <button class="button button--sm button--confirm button--add">Agregar</button>
+                                <span class="card__counter">0</span>
+                                <button class="button button--sm button--danger button--remove">Quitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_02.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Zapatillas Running</h4>
+                        <ul class="card__text">
+                            <li>Color: Gris y Azul.</li>
+                            <li>Adecuado para: Correr.</li>
+                            <li>Origen: Argentina.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">22179,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_03.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Zapatilla de moda</h4>
+                        <ul class="card__text">
+                            <li>Color: Plateadas.</li>
+                            <li>Nros disponibles: 35 a 40.</li>
+                            <li>Origen: Importado.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">21999,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_04.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Campera Sport</h4>
+                        <ul class="card__text">
+                            <li>Colores: Gris.</li>
+                            <li>Uso: Urbano, social, deportes.</li>
+                            <li>Origen: Importado.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">22999,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_05.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Campera Sport</h4>
+                        <ul class="card__text">
+                            <li>Colores: Negro.</li>
+                            <li>Uso: Urbano, social, deportes.</li>
+                            <li>Origen: Importado.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">22999,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_06.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Zapatillas Botita</h4>
+                        <ul class="card__text">
+                            <li>Color: Azul.</li>
+                            <li>Nros disponibles: 38 al 43.</li>
+                            <li>Origen: Brasil.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">18979,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_07.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Botines Futbol</h4>
+                        <ul class="card__text">
+                            <li>Color: Multicolor.</li>
+                            <li>Talles disponibles: 37 al 43.</li>
+                            <li>Origen: Brasil.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">27999,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_08.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Calzas de Mujer</h4>
+                        <ul class="card__text">
+                            <li>Colores: Blanco y negro.</li>
+                            <li>Uso: Deportivo.</li>
+                            <li>Origen: Argentina.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">17899,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_09.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Gorra - Hombre</h4>
+                        <ul class="card__text">
+                            <li>Color: Blanco y negro.</li>
+                            <li>Uso: Deportivo.</li>
+                            <li>Origen: Argentina.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">15789,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/img_10.jpg" alt="descripcion de la foto">
+                    <div class="card__reference">
+                        <h4 class="card__tittle">Buzo canguro</h4>
+                        <ul class="card__text">
+                            <li>Color: Negro.</li>
+                            <li>Talles: "S", "M" y "L".</li>
+                            <li>Origen: Argentina.</li>
+                        </ul>
+                    </div>
+                    <div class="card__shop">
+                        <span class="card__price">21979,99</span>
+                        <div class="card__addcart">
+                            <button class="button button--sm button--confirm button--add">Agregar</button>
+                            <span class="card__counter">0</span>
+                            <button class="button button--sm button--danger button--remove">Quitar</button>
+                        </div>
+                    </div>
+                </figure>
             </div>
         </section>
 
@@ -171,45 +261,41 @@
         <div class="footer__container">
             <div class="footer__item">
                 <h3 class="footer__tittle">Institucional</h3>
-    
                 <ul>
-                    <li class="footer__row">Quienes somos</li>
-                    <li class="footer__row">Politicas de privacidad</li>
-                    <li class="footer__row">Terminos y condiciones</li>
-                    <li class="footer__row">Defensa del consumidor</li>
+                    <li class="footer__row"><a href="./about.html">Quienes Somos?</a></li>
+                    <li class="footer__row"><a href="./index.html">Politicas de Privacidad</a></li>
+                    <li class="footer__row"><a href="./index.html">Terminos y Condiciones</a></li>
+                    <li class="footer__row"><a href="./index.html">Defensa al consumidor</a></li>
                 </ul>
             </div>
             <div class="footer__item">
                 <h3 class="footer__tittle">Ayuda</h3>
-    
                 <ul>
-                    <li class="footer__row">Preguntas frecuentes</li>
-                    <li class="footer__row">Como comprar?</li>
-                    <li class="footer__row">Sucursales</li>
-                    <li class="footer__row">Cambios</li>
+                    <li class="footer__row"><a href="./index.html">Preguntas Frecuentes</a></li>
+                    <li class="footer__row"><a href="./index.html">Como comprar?</a></li>
+                    <li class="footer__row"><a href="./contact.html">Sucursales</a></li>
+                    <li class="footer__row"><a href="./index.html">Cambios</a></li>
                 </ul>
             </div>
             <div class="footer__item">
                 <h3 class="footer__tittle">Redes Sociales</h3>
-    
                 <ul>
-                    <li class="footer__row">Twitter</li>
-                    <li class="footer__row">Facebook</li>
-                    <li class="footer__row">Instragram</li>
+                    <li class="footer__row"><a href="./contact.html">Twitter</a></li>
+                    <li class="footer__row"><a href="./contact.html">Facebook</a></li>
+                    <li class="footer__row"><a href="./contact.html">Instagram</a></li>
                 </ul>
             </div>
             <div class="footer__item">
                 <h3 class="footer__tittle">Centro de atencion al cliente</h3>
-    
                 <ul>
-                    <li class="footer__row">Contacto</li>
-                    <li class="footer__row">WhatsAPP</li>
-                    <li class="footer__row">Telefono</li>
+                    <li class="footer__row"><a href="./contact.html">Contacto</a></li>
+                    <li class="footer__row"><a href="./contact.html">WhatsAPP</a></li>
+                    <li class="footer__row"><a href="./contact.html">Telefonos</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__copyright">
-            <span>&copy;2023 Todos los derechos reservados</span>
+            <span>&copy;2023 SebaSports - Todos los derechos reservados</span>
         </div>
     </footer>
 

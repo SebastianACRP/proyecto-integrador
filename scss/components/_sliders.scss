@@ -5,7 +5,7 @@ $_width: 100%;
 
 .slider {
     position: relative;
-    height: 25vh;
+    height: 50vh;
     width: calc($_width * 3);
     display: flex;
 
@@ -24,8 +24,7 @@ $_width: 100%;
 
     &__tittle {
         position: absolute;
-        font-size: 2rem;
-        color: white;
+        color: var.$backgroundColorLight;
     }
 
     &__image {
@@ -35,14 +34,64 @@ $_width: 100%;
     }
 
     @keyframes move-slide {
-        0% {left: 0;}
-        20% {left: 0;}
-        25% {left: -100%;}
-        45% {left: -100%}
-        50% {left: -200%;}
-        70% {left: -200%;}
-        75% {left: -100%;}
-        95% {left: -100%;}
-        100% {left: -0%}
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -100%;
+        }
+
+        95% {
+            left: -100%;
+        }
+
+        100% {
+            left: -0%
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .slider {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider {
+        height: 45vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 30vh;
     }
 }
