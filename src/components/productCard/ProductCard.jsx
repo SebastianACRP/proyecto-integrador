@@ -12,10 +12,13 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { NavLink } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
 import { useEffect } from "react";
+import { useContext } from "react";
+import ShoppingCartContext from "../../contexts/ShoppingCartContext";
 
 const ProductCard = (props) => {
     const { product, setProducts, itIsOff } = props;
     const { products, removeProduct } = useProducts();
+    const { addProductCart } = useContext(ShoppingCartContext);
 
     useEffect(() => {
         if (products?.length > 0) {
@@ -50,7 +53,7 @@ const ProductCard = (props) => {
             <CardActions className="product-card__actions">
                 <Button color="danger"><RemoveIcon/></Button>
                 <span>0</span>
-                <Button><AddIcon/></Button>
+                <Button onClick={() => addProductCart(product)}><AddIcon/></Button>
             </CardActions>
         </Card>
     );
