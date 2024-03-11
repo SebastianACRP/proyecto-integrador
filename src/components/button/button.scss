@@ -2,11 +2,11 @@
 
 .button {
     color: var.$colorFontLight !important;
-    background-color: var.$colorBackgroundDark !important;
+    background-color: var.$colorBackgroundVeryDark !important;
 
     &:hover,
     &:active {
-        background-color: var.$colorBackgroundDarker !important;
+        background-color: var.$colorBackgroundVeryDark !important;
     }
 
     svg {

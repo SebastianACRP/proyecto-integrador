@@ -132,15 +132,15 @@ const Contact = () => {
                 <Box className="contact__section__data">
                     <Box>
                         <PlaceIcon/>
-                        <span>Av. Siempreviva 740 - San Juan - Argentina.</span>
+                        <span>Av. Calchaqui 43500, Quilmes, Argentina</span>
                     </Box>
                     <Box>
                         <PhoneIcon/>
-                        <span>02644258877</span>
+                        <span>15351318327</span>
                     </Box>
                     <Box>
                         <MailIcon/>
-                        <span>info@pizzastore.com</span>
+                        <span>contacto@sebaburger.com</span>
                     </Box>
                 </Box>
                 <Box className="contact__section__map">

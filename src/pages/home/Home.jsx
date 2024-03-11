@@ -18,7 +18,7 @@ const Home = () => {
                 className="home__section">
 
                 <Box className="home__section__search">
-                    <h3>Productos</h3>
+                    <h3>Hamburguesas Artesanales</h3>
                     <ProductSearch setProducts={setProducts}/>
                 </Box>
 

@@ -1,9 +1,12 @@
 import useLocalStorage from "./useLocalStorage.js";
+import { useContext } from "react";
+import ShoppingCartContext from "../contexts/ShoppingCartContext.jsx";
 
-import { pizzas } from "../data/data.js";
+import { burgers } from "../data/data.js";
 
 const useProducts = () => {
-    const { items, setItem } = useLocalStorage({ products: pizzas });
+    const { items, setItem } = useLocalStorage({ products: burgers });
+    const { removeProductFromCart } = useContext( ShoppingCartContext );
 
     const normalizeValue = (value = "") => {
         return value
@@ -19,11 +22,11 @@ const useProducts = () => {
     const searchProducts = (text) => {
         const preparedText = normalizeValue(text);
 
-        return items.products.filter((pizza) => {
-            const preparedPizza = normalizeValue(pizza.name);
+        return items.products.filter((burger) => {
+            const preparedBurger = normalizeValue(burger.name);
 
-            if (preparedText.length === 0 || preparedPizza.includes(preparedText)) {
-                return pizza;
+            if (preparedText.length === 0 || preparedBurger.includes(preparedText)) {
+                return burger;
             }
         });
     };
@@ -63,9 +66,15 @@ const useProducts = () => {
     };
 
     const removeProduct = (id) => {
-        const productsWithoutthisProduct = items.products.filter((item) => item.id != id);
-        console.log(id);
-        setItem("products", productsWithoutthisProduct);
+        // Eliminar el producto de la lista de productos
+        const productsWithoutThisProduct = items.products.filter((item) => item.id !== id);
+        setItem("products", productsWithoutThisProduct);
+
+        // Eliminar el producto del carrito si está presente
+        removeProductFromCart(id);
+
+        // Si deseas actualizar el stock en localStorage, aquí puedes hacerlo también
+        // Ejemplo: localStorage.setItem(`product_${id}_stock`, updatedStock);
     };
 
     return {
