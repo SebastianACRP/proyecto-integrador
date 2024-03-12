@@ -9,7 +9,7 @@ const About = () => {
                 className="about__section">
                 <h3>Misión</h3>
                 <img
-                    src="/images/about/mision.png"
+                    src="images/about/mision3.jpg"
                     alt="Fotrografía de la misión de la empresa"/>
                 <p>Nuestra misión es ofrecer experiencias gastronómicas únicas y satisfactorias a nuestros clientes a través de hamburguesas de alta calidad, preparadas con ingredientes frescos y sabrosos. Nos esforzamos por superar las expectativas de nuestros clientes en cada visita, brindando un servicio excepcional y un ambiente acogedor que los haga sentir como en casa.</p>
                 <p>Queremos que nuestro dialogo mas fructifero con nuestros clientes sea el feedback recibido por cada hamburguesa que preparamos y brindamos con todo nuestro esfuerzo y dedicacion para dar una experiencia gastronomica premium. Preparamos cada hamburguesa con la dedicacion que se merece.</p>

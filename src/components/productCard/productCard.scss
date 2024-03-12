@@ -87,6 +87,11 @@ $_width: 100%;
         display: flex;
         justify-content: center;
         width: $_width;
+
+        &--stock {
+            color: var.$colorBackgroundVeryDanger;
+        }
+
     }
 
     @media (max-width: 650px) {

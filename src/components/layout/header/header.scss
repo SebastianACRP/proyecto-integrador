@@ -3,7 +3,7 @@
 .header {
     grid-area: header;
 
-    background-color: var.$colorBackgroundVeryDark;
+    background-color: var.$colorBackgroundLighter;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,17 +15,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2vw;
+        gap: 1vw;
 
 
         &__title {
-            color: var.$colorFontDisabled;
+            color: var.$colorBorderDarker;
             font-size: 4rem;
             font-family: "Super Plants";
 
             &--color {
                 color: var.$colorBackgroundVeryDark;
-                -webkit-text-stroke: 0.25rem var.$colorFontLight;
+                -webkit-text-stroke: 0.25rem var.$colorBorderDarker;
             }
         }
     }

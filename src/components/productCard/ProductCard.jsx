@@ -91,7 +91,9 @@ const ProductCard = (props) => {
             </CardContent>
             <CardActions className="product-card__actions">
                 {localStock === 0 ? (
-                    <p>No hay Stock</p>
+                    <div>
+                        <p className="product-card__actions--stock">No hay Stock</p>
+                    </div>
                 ) : (
                     <>
                         <Button

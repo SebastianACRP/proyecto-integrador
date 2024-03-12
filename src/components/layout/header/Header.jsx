@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import "./header.scss";
+import Logo from "../../logo/Logo";
 
 import Navbar from "../navbar/Navbar";
 
@@ -14,6 +15,7 @@ const Header = () => {
                     Seba
                     <span className="header__group__title header__group__title--color">Burger</span>
                 </h1>
+                <Logo/>
             </Box>
             <Navbar/>
         </Box>

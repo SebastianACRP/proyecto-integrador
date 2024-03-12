@@ -7,7 +7,7 @@
 
     width: 100%;
     padding: 0.25rem 0.75rem 0 0.75rem;
-    background-color: var.$colorBackgroundDark;
+    background-color: var.$colorBackgroundVeryDark;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.75);
 
     &__drawer-icon {
@@ -18,13 +18,13 @@
 
     &__items {
         a {
-            color: var.$colorFontDarker;
+            color: var.$colorBackgroundBlacker;
         }
 
         .active {
-            color: var.$colorFontLight;
+            color: var.$colorBackgroundLighter;
             text-shadow: 0.125rem 0.125rem 0.5rem var.$colorBorderDarker;
-
+            text-decoration: underline;
         }
     }
 
