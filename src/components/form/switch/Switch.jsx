@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import { Box, InputLabel, Switch as SwitchUI } from "@mui/material";
+import PropTypes from "prop-types";
 import "./switch.scss";
 
 const Switch = (props) => {

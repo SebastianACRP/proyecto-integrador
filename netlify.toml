@@ -4,6 +4,8 @@
     publish   = "dist"
     base      = "/"
 
+[build.enviroment]
+    VITE_BACKEND_URL = "https://mitienda-sebastian.onrender.com"
 
 [[redirects]]
     from   = "/*"

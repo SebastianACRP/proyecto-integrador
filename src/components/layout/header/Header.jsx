@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import "./header.scss";
-import Logo from "../../logo/Logo";
 
 import Navbar from "../navbar/Navbar";
+import Logo from "../../logo/Logo";
 
 const Header = () => {
     return (

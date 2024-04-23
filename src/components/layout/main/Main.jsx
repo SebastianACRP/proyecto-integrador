@@ -30,8 +30,11 @@ const Main = () => {
                     path="/product/:id"
                     element={<Product/>}/>
                 <Route
-                    path="/shoppingCart"
+                    path="/shopping-cart"
                     element={<ShoppingCart/>}/>
+                <Route
+                    path="*"
+                    element={<Home/>}/>
             </Routes>
         </Box>
     );

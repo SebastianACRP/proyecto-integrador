@@ -6,7 +6,7 @@ const Logo = () => {
         <Box className="logo">
             <img
                 src="images/layout/burger-logo1.jpg"
-                alt="Logo de la pizzería"/>
+                alt="Logo de la hamburgueseria"/>
         </Box>
     );
 };

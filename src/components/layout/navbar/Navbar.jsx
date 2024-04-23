@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
     Badge,
     Box,
@@ -16,15 +16,14 @@ import "./navbar.scss";
 
 import links from "../../../links/links";
 
-import MenuIcon from "@mui/icons-material/Menu";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import ShoppingCartContext from "../../../contexts/ShoppingCartContext";
 
+import MenuIcon from "@mui/icons-material/Menu";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+
 const Navbar = () => {
-
-    const { shoppingCartCounter } = useContext(ShoppingCartContext);
-
     const [ openDrawer, setOpenDrawer ] = useState(false);
+    const { countProducts } = useContext(ShoppingCartContext);
 
     const handleOnClickOpenDrawer = () => {
         setOpenDrawer(true);
@@ -54,17 +53,16 @@ const Navbar = () => {
                 ))}
             </Box>
 
-            <Box
-                className="navbar__shopping-cart">
-                <Link to="/shoppingCart" >
-                    <IconButton>
-                        <Badge
-                            className="navbar__shopping-cart__icon-badge"
-                            badgeContent={shoppingCartCounter()}>
-                            <ShoppingCartOutlinedIcon/>
-                        </Badge>
-                    </IconButton>
-                </Link>
+            <Box className="navbar__shopping-cart">
+                <IconButton
+                    component={NavLink}
+                    to="/shopping-cart">
+                    <Badge
+                        className="navbar__shopping-cart__icon-badge"
+                        badgeContent={countProducts()}>
+                        <ShoppingCartOutlinedIcon/>
+                    </Badge>
+                </IconButton>
             </Box>
 
             <Drawer
