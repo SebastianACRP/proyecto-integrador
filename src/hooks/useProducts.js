@@ -40,7 +40,7 @@ const useProducts = () => {
             });
     };
 
-    /* const updateStock = async (products) => {
+    const updateStock = async (products) => {
 
         for (const product of products) {
             const newStock = product.stock - product.amount;
@@ -57,7 +57,7 @@ const useProducts = () => {
 
         }
 
-    };*/
+    };
 
     const removeProduct = async (id) => {
         return await axios.delete(`${PRODUCTS_URL}/${id}`)
@@ -92,7 +92,7 @@ const useProducts = () => {
         //updateProductStock,
         removeProduct,
         uploadProductImage,
-        /*updateStock,*/
+        updateStock,
     };
 };
 

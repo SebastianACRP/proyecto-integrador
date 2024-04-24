@@ -10,16 +10,17 @@ import ShoppingCartContext from "../../contexts/ShoppingCartContext";
 
 import Button from "../../components/button/Button";
 import Alert from "../../components/alert/Alert";
+import useProducts from "../../hooks/useProducts";
 
 import DeleteIcon from "@mui/icons-material/Delete";
 
 const ShoppingCart = () => {
     const { shoppingCart, calculateTotal, removeCartProduct, removeAllCartProducts, buyCartProducts } = useContext(ShoppingCartContext);
     const [ openAlert, setOpenAlert ] = useState(false);
-    /*const { updateStock } = useProducts();*/
+    const { updateStock } = useProducts();
 
     const buy = () => {
-        /*updateStock(shoppingCart);*/
+        updateStock(shoppingCart);
         buyCartProducts();
         setOpenAlert(true);
     };
